@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<h2> javaScript</h2>
+ <button  onclick="greet()">greet me</button>
+
+
+</body>
+
+<script>
+ for (let i=1; i <= 10; i++)
+console.log(i);
+
+
+    let myName = 'tobi'
+    console.log(myName);
+    let nameOfFoods = ['rice', 'beans', 'yam', 'spagetti']
+    console.log(nameOfFoods);
+
+function greet(){
+    prompt("Good morning Sir")
+}
+
+
+
+
+let time =10;
+let timer = setInterval(function(){
+    time = time -1;
+    console.log(time);
+    if(time ===0){
+        clearInterval(timer)
+    alert('PENCILS UP')
+    }
+    
+},1000)
+</script>
+
+</html>
