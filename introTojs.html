@@ -11,7 +11,7 @@
 <h2> javaScript</h2>
  <button  onclick="greet()">greet me</button>
 
-
+<div id="timer"></div>
 </body>
 
 <script>
@@ -32,8 +32,10 @@ function greet(){
 
 
 let time =10;
+const display = document.getElementById('timer');
 let timer = setInterval(function(){
     time = time -1;
+    display.innerHTML = time;
     console.log(time);
     if(time ===0){
         clearInterval(timer)
@@ -41,6 +43,8 @@ let timer = setInterval(function(){
     }
     
 },1000)
+
+
 </script>
 
 </html>
